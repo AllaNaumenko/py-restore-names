@@ -1,6 +1,3 @@
-import pytest
-from app.restore_names import restore_names
-
 from app.main import restore_names
 
 
@@ -86,8 +83,7 @@ def test_restore_names_for_multiple_users() -> None:
     ]
 
 
-def test_empty_list() -> None:
+def test_empty_users_list() -> None:
     users = []
     restore_names(users)
     assert users == []
-
