@@ -1,4 +1,4 @@
-from typing import List
+from app.restore_names import restore_names
 
 
 def restore_names(users: List[dict]) -> None:
